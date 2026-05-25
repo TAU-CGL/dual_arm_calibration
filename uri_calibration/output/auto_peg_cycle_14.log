@@ -1,0 +1,61 @@
+uri rxyz anchor (first pose): [-0.0384, -0.0222, -2.2732]
+ayal current position: [-0.4031, 0.3163, 0.3237, 2.4775, 1.9039, -0.0108]
+uri  mate: [0.2620, -0.5046, 0.5602, -0.0384, -0.0222, -2.2732]
+ayal mate: [-0.2335, 0.4571, 0.2908, 2.8364, 1.3081, -0.0479]
+ayal_unmate: [-0.2329, 0.4580, 0.3208, 2.8364, 1.3081, -0.0479]
+[cycle 0] insert: target rel_d <= 1.5 mm (cap 25 steps × 1.0 mm), then seek |F_z|>=5.0 N (cap 15 steps)
+  [insert c0 s0] delta=[-0.0009, 0.0019, 0.0237, -0.0022, -0.0149, 0.0400] rel_d=0.0238m ayal_F/T_tcp=[-3.9734, 6.7521, -54.7643, -0.6908, -0.4241, -0.1344] uri_F/T_tcp=[-5.8897, -5.2402, -57.5637, 0.8497, -1.2047, 0.0355]
+  large wrench over 20.0 N detected, aborting insert: [-3.9734, 6.7521, -54.7643, -0.6908, -0.4241, -0.1344]. distance was 0.0238 m
+  exceeded wrench. straightening then entering force-seek
+  [straightening c0 s0] delta=[-0.0009, 0.0019, 0.0238, -0.0021, -0.0148, 0.0400] rel_d=0.0239m ayal_F/T_tcp=[-5.8231, 5.2138, -53.4301, -0.6867, -1.2126, -0.0999] uri_F/T_tcp=[-7.5342, -2.7906, -53.9946, 0.6501, -2.2770, -0.0036]
+  large wrench over 20.0 N detected, aborting insert: [-3.9734, 6.7521, -54.7643, -0.6908, -0.4241, -0.1344]. distance was 0.0238 m
+  exceeded wrench during straightening. skipping force-seek and moving to next cycle.
+[cycle 0] pull: target rel_d >= 27.0 mm (cap 25 steps × 1.0 mm), then -Z back-off 20.0 mm
+  pull anchor xyz=[-0.2344, 0.4590, 0.3146] rxyz=[2.8364, 1.3081, -0.0479]
+  [pull_straighten c0 s0] delta=[-0.0009, 0.0019, 0.0238, -0.0021, -0.0149, 0.0400] rel_d=0.0239m ayal_F/T_tcp=[-5.8020, 4.8583, -53.4900, -0.6419, -1.1613, -0.1012] uri_F/T_tcp=[-7.2447, -2.4440, -53.9090, 0.6286, -2.2279, -0.0044]
+  [pull c0 s0] delta=[-0.0009, 0.0019, 0.0238, -0.0021, -0.0149, 0.0400] rel_d=0.0238m ayal_F/T_tcp=[-5.6577, 4.8352, -53.3839, -0.6394, -1.1354, -0.1024] uri_F/T_tcp=[-7.0700, -2.4718, -53.6679, 0.6237, -2.1999, -0.0035]
+  large wrench over 20.0 N detected, aborting insert: [-5.6577, 4.8352, -53.3839, -0.6394, -1.1354, -0.1024]. distance was 0.0238 m
+  exceeded wrench. straightening then moving to next cycle
+  [straightening c0 s0] delta=[-0.0009, 0.0019, 0.0238, -0.0022, -0.0148, 0.0400] rel_d=0.0239m ayal_F/T_tcp=[-5.4927, 4.8187, -53.2153, -0.6345, -1.1237, -0.1011] uri_F/T_tcp=[-6.9528, -2.4989, -53.6250, 0.6208, -2.1862, -0.0041]
+  [pull c0 s1] delta=[-0.0029, 0.0018, 0.0250, -0.0109, -0.0336, 0.0014] rel_d=0.0252m ayal_F/T_tcp=[-42.8301, 11.2592, -9.7208, -1.2626, -6.1326, -0.0887] uri_F/T_tcp=[-46.4616, -9.5544, -11.1178, 1.1783, -7.4362, -0.3561]
+  large wrench over 20.0 N detected, aborting insert: [-42.8301, 11.2592, -9.7208, -1.2626, -6.1326, -0.0887]. distance was 0.0252 m
+  exceeded wrench. straightening then moving to next cycle
+  [straightening c0 s1] delta=[-0.0028, 0.0019, 0.0251, -0.0108, -0.0337, 0.0015] rel_d=0.0253m ayal_F/T_tcp=[-0.8238, 1.5895, -7.3785, -0.3143, -0.5853, -0.1016] uri_F/T_tcp=[-1.2686, -1.4883, -7.9106, 0.3079, -0.7530, -0.0079]
+  exceeded wrench during straightening 2 times. skipping remaining pull steps and moving to next cycle.
+  step cap hit before reaching rel_d target; backing off anyway
+  extra pull-back 20.0 mm along ayal -Z
+  [pull_backoff c0 s0] delta=[0.0010, 0.0014, 0.0500, -0.0001, 0.0001, -0.0000] rel_d=0.0500m ayal_F/T_tcp=[1.4355, -0.1089, 0.4738, -0.0185, -0.0487, 0.0312] uri_F/T_tcp=[1.5527, -0.1209, 0.4123, 0.0166, -0.0644, -0.0066]
+choose_new_uri_location: picked [0.1400, -0.4800, 0.4200, -0.2070, 0.1492, -2.3971] (attempt 4)
+move ayal to compact position
+move uri to [0.1400, -0.4800, 0.4200, -0.2070, 0.1492, -2.3971]
+  computed ayal mate: [-0.3554, 0.4822, 0.1506, -2.8168, -1.0776, 0.2427]
+ayal current position: [-0.4045, 0.3173, 0.3408, 2.4812, 1.8873, -0.0407]
+uri  mate: [0.1400, -0.4800, 0.4200, -0.2070, 0.1492, -2.3971]
+ayal mate: [-0.3554, 0.4822, 0.1506, -2.8168, -1.0776, 0.2427]
+ayal_unmate: [-0.3497, 0.4807, 0.1800, -2.8168, -1.0776, 0.2427]
+[cycle 1] insert: target rel_d <= 1.5 mm (cap 25 steps × 1.0 mm), then seek |F_z|>=5.0 N (cap 15 steps)
+  [insert c1 s0] delta=[0.0039, -0.0020, 0.0221, 0.0288, -0.0319, 0.0401] rel_d=0.0225m ayal_F/T_tcp=[-13.7595, 12.7617, -123.2783, -1.8438, -1.5937, 0.0704] uri_F/T_tcp=[-6.3696, -14.9011, -115.2895, 2.1037, -2.2815, -0.1290]
+  large wrench over 20.0 N detected, aborting insert: [-13.7595, 12.7617, -123.2783, -1.8438, -1.5937, 0.0704]. distance was 0.0225 m
+  exceeded wrench. straightening then entering force-seek
+  [straightening c1 s0] delta=[0.0046, -0.0012, 0.0235, -0.0000, 0.0001, -0.0001] rel_d=0.0240m ayal_F/T_tcp=[-2.8314, 8.8917, -35.1108, -1.0184, -0.6127, -0.1370] uri_F/T_tcp=[-14.7129, -2.2944, -36.3137, 0.5476, -2.5834, -0.0561]
+  large wrench over 20.0 N detected, aborting insert: [-13.7595, 12.7617, -123.2783, -1.8438, -1.5937, 0.0704]. distance was 0.0225 m
+  exceeded wrench during straightening. skipping force-seek and moving to next cycle.
+[cycle 1] pull: target rel_d >= 27.0 mm (cap 25 steps × 1.0 mm), then -Z back-off 20.0 mm
+  pull anchor xyz=[-0.3508, 0.4810, 0.1741] rxyz=[-2.8167, -1.0776, 0.2428]
+  [pull_straighten c1 s0] delta=[0.0046, -0.0012, 0.0235, 0.0000, 0.0000, -0.0000] rel_d=0.0240m ayal_F/T_tcp=[-7.3528, 5.8686, -35.1359, -0.7837, -1.0617, -0.1409] uri_F/T_tcp=[-6.8154, -4.4797, -35.8990, 0.7514, -1.7564, 0.0158]
+  [pull c1 s0] delta=[0.0046, -0.0012, 0.0235, 0.0000, -0.0000, 0.0000] rel_d=0.0240m ayal_F/T_tcp=[-7.1702, 5.7817, -35.4286, -0.7796, -1.0271, -0.1350] uri_F/T_tcp=[-6.7827, -4.4085, -35.9038, 0.7384, -1.7081, 0.0159]
+  large wrench over 20.0 N detected, aborting insert: [-7.1702, 5.7817, -35.4286, -0.7796, -1.0271, -0.1350]. distance was 0.0240 m
+  exceeded wrench. straightening then moving to next cycle
+  [straightening c1 s0] delta=[0.0046, -0.0012, 0.0235, 0.0000, 0.0000, 0.0000] rel_d=0.0240m ayal_F/T_tcp=[-7.2904, 5.8145, -34.9815, -0.7676, -1.0224, -0.1328] uri_F/T_tcp=[-6.5484, -4.4485, -35.5722, 0.7318, -1.7049, 0.0176]
+  [pull c1 s1] delta=[0.0045, -0.0012, 0.0235, 0.0000, -0.0000, -0.0000] rel_d=0.0240m ayal_F/T_tcp=[-7.1360, 5.7971, -34.9427, -0.7698, -1.0200, -0.1305] uri_F/T_tcp=[-6.7938, -4.3196, -35.7645, 0.7332, -1.6803, 0.0217]
+  large wrench over 20.0 N detected, aborting insert: [-7.1360, 5.7971, -34.9427, -0.7698, -1.0200, -0.1305]. distance was 0.0240 m
+  exceeded wrench. straightening then moving to next cycle
+  [straightening c1 s1] delta=[0.0046, -0.0012, 0.0236, 0.0001, 0.0000, 0.0000] rel_d=0.0240m ayal_F/T_tcp=[-7.0574, 5.6526, -35.2465, -0.7716, -1.0154, -0.1314] uri_F/T_tcp=[-6.8798, -4.4135, -35.5270, 0.7307, -1.6730, 0.0181]
+  exceeded wrench during straightening 2 times. skipping remaining pull steps and moving to next cycle.
+  step cap hit before reaching rel_d target; backing off anyway
+  extra pull-back 20.0 mm along ayal -Z
+  [pull_backoff c1 s0] delta=[0.0046, -0.0012, 0.0236, 0.0001, 0.0000, -0.0000] rel_d=0.0241m ayal_F/T_tcp=[-7.1277, 5.7535, -35.1795, -0.7715, -1.0078, -0.1289] uri_F/T_tcp=[-6.8243, -4.4213, -35.5151, 0.7280, -1.6685, 0.0194]
+choose_new_uri_location: picked [0.3800, -0.3200, 0.6200, 0.0602, -0.1664, -2.2519] (attempt 1)
+move ayal to compact position
+move uri to [0.3800, -0.3200, 0.6200, 0.0602, -0.1664, -2.2519]
+saved 16 records to /home/user/Projects/yarbiv/rmp_lab/dual_arm_peg/output/auto_peg_cycle_14.json

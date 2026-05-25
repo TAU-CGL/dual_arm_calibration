@@ -1,0 +1,7 @@
+log_path:  /home/user/Projects/yarbiv/rmp_lab/playground/logs/record_pose_and_force_1.log
+data_path: /home/user/Projects/yarbiv/rmp_lab/playground/logs/record_pose_and_force_1.json
+current uri:   [0.3033, -0.4230, 0.6189, 0.4286, -0.4534, 1.9199]
+expected uri:  [0.3695, -0.3221, 0.6966, 1.5708, 0.0000, 0.0000]
+current ayal:  [-0.1939, 0.5367, 0.3501, -2.2326, 1.5278, 0.5064]
+expected ayal: [-0.1273, 0.6368, 0.4271, 0.0000, 2.2214, 2.2214]
+zeroFtSensor -> True

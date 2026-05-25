@@ -1,0 +1,127 @@
+Help on module dashboard_client:
+
+NAME
+    dashboard_client - Dashboard Client
+
+CLASSES
+    pybind11_builtins.pybind11_object(builtins.object)
+        DashboardClient
+    
+    class DashboardClient(pybind11_builtins.pybind11_object)
+     |  Method resolution order:
+     |      DashboardClient
+     |      pybind11_builtins.pybind11_object
+     |      builtins.object
+     |  
+     |  Methods defined here:
+     |  
+     |  __init__(...)
+     |      __init__(self: dashboard_client.DashboardClient, hostname: str, port: int = 29999, verbose: bool = False) -> None
+     |  
+     |  __repr__(...)
+     |      __repr__(self: dashboard_client.DashboardClient) -> str
+     |  
+     |  addToLog(...)
+     |      addToLog(self: dashboard_client.DashboardClient, arg0: str) -> None
+     |  
+     |  brakeRelease(...)
+     |      brakeRelease(self: dashboard_client.DashboardClient) -> None
+     |  
+     |  closePopup(...)
+     |      closePopup(self: dashboard_client.DashboardClient) -> None
+     |  
+     |  closeSafetyPopup(...)
+     |      closeSafetyPopup(self: dashboard_client.DashboardClient) -> None
+     |  
+     |  connect(...)
+     |      connect(self: dashboard_client.DashboardClient, timeout_ms: int = 2000) -> None
+     |  
+     |  disconnect(...)
+     |      disconnect(self: dashboard_client.DashboardClient) -> None
+     |  
+     |  getLoadedProgram(...)
+     |      getLoadedProgram(self: dashboard_client.DashboardClient) -> str
+     |  
+     |  getRobotModel(...)
+          |      getRobotModel(self: dashboard_client.DashboardClient) -> str
+     |  
+     |  getSerialNumber(...)
+     |      getSerialNumber(self: dashboard_client.DashboardClient) -> str
+     |  
+     |  isConnected(...)
+     |      isConnected(self: dashboard_client.DashboardClient) -> bool
+     |  
+     |  isInRemoteControl(...)
+     |      isInRemoteControl(self: dashboard_client.DashboardClient) -> bool
+     |  
+     |  isProgramSaved(...)
+     |      isProgramSaved(self: dashboard_client.DashboardClient) -> bool
+     |  
+     |  loadURP(...)
+     |      loadURP(self: dashboard_client.DashboardClient, arg0: str) -> None
+     |  
+     |  pause(...)
+     |      pause(self: dashboard_client.DashboardClient) -> None
+     |  
+     |  play(...)
+     |      play(self: dashboard_client.DashboardClient) -> None
+     |  
+     |  polyscopeVersion(...)
+     |      polyscopeVersion(self: dashboard_client.DashboardClient) -> str
+     |  
+     |  popup(...)
+     |      popup(self: dashboard_client.DashboardClient, arg0: str) -> None
+     |  
+     |  powerOff(...)
+     |      powerOff(self: dashboard_client.DashboardClient) -> None
+     |  
+     |  powerOn(...)
+     |      powerOn(self: dashboard_client.DashboardClient) -> None
+     |  
+     |  programState(...)
+     |      programState(self: dashboard_client.DashboardClient) -> str
+     |  
+     |  quit(...)
+     |      quit(self: dashboard_client.DashboardClient) -> None
+     |  
+     |  receive(...)
+     |      receive(self: dashboard_client.DashboardClient) -> str
+     |  
+     |  restartSafety(...)
+     |      restartSafety(self: dashboard_client.DashboardClient) -> None
+          |  
+     |  robotmode(...)
+     |      robotmode(self: dashboard_client.DashboardClient) -> str
+     |  
+     |  running(...)
+     |      running(self: dashboard_client.DashboardClient) -> bool
+     |  
+     |  safetymode(...)
+     |      safetymode(self: dashboard_client.DashboardClient) -> str
+     |  
+     |  safetystatus(...)
+     |      safetystatus(self: dashboard_client.DashboardClient) -> str
+     |  
+     |  send(...)
+     |      send(self: dashboard_client.DashboardClient, arg0: str) -> None
+     |  
+     |  setUserRole(...)
+     |      setUserRole(self: dashboard_client.DashboardClient, arg0: ur_rtde::UserRole) -> None
+     |  
+     |  shutdown(...)
+     |      shutdown(self: dashboard_client.DashboardClient) -> None
+     |  
+     |  stop(...)
+     |      stop(self: dashboard_client.DashboardClient) -> None
+     |  
+     |  unlockProtectiveStop(...)
+     |      unlockProtectiveStop(self: dashboard_client.DashboardClient) -> None
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from pybind11_builtins.pybind11_object:
+     |  
+     |  __new__(*args, **kwargs) class method of pybind11_builtins.pybind11_object
+     |      Create and return a new object.  See help(type) for accurate signature.
+     FILE
+    /home/user/miniconda3/envs/sim_env/lib/python3.11/site-packages/dashboard_client.cpython-311-x86_64-linux-g
+nu.so

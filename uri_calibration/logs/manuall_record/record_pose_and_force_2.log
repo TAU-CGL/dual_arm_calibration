@@ -1,0 +1,19 @@
+log_path:  /home/user/Projects/yarbiv/rmp_lab/playground/logs/record_pose_and_force_2.log
+data_path: /home/user/Projects/yarbiv/rmp_lab/playground/logs/record_pose_and_force_2.json
+new uri:  [0.3033, -0.4230, 0.6189, 0.4286, -0.4535, 1.9198]
+new ayal: [-0.1932, 0.5371, 0.3500, -2.2351, 1.5380, 0.5042]
+current uri:   [0.3033, -0.4230, 0.6189, 0.4286, -0.4535, 1.9198]
+expected uri:  [0.3695, -0.3221, 0.6966, 1.5708, 0.0000, 0.0000]
+current ayal:  [-0.1932, 0.5371, 0.3500, -2.2351, 1.5380, 0.5042]
+expected ayal: [-0.1273, 0.6368, 0.4271, 0.0000, 2.2214, 2.2214]
+zeroFtSensor -> True
+step 0
+  ayal_delta:      [0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000]
+  ayal_wrench_tcp: [-0.0618, -0.1243, 0.1725, 0.0012, 0.0052, 0.0074]
+step 1
+  ayal_delta:      [-0.0011, -0.0005, 0.0000, -0.0688, -0.1308, -0.0320]
+  ayal_wrench_tcp: [1.1478, -0.8102, -3.0695, 0.2770, 0.0299, 0.8999]
+step 2
+  ayal_delta:      [0.0061, -0.0106, 0.0207, -0.0040, -0.0186, 0.0345]
+  ayal_wrench_tcp: [-0.2786, 1.6438, -2.1771, -0.2032, -0.0286, 0.0212]
+saved 3 records to /home/user/Projects/yarbiv/rmp_lab/playground/logs/record_pose_and_force_2.json

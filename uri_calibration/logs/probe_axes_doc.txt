@@ -1,0 +1,56 @@
+base pose both:
+URI:  (+0.3695, -0.3221, 0.6966, 1.5708, 0.0000, 0.00000)
+AYAL: (-0.1273, +0.6368, 0.4271, 0.0000, 2.2214, +2.2214)
+
+conclusions:
+Rx => Fx, Fy(3 times bigger), Fz ; Mx, My(5 times bigger), Mz
+
+1. moved ?	+X 	=> 
+	step_trans < 0.0005 showed greater derivative in Y axis. 
+	step_trans == 0.0005 worked: **+**X der was 100% bigger than biggest Y.
+2. moved 1.5mm  +Y 	=> 
+	step_trans == 0.0005 worked?: **-**Y der was 33% bigger than biggest X.
+3. moved 0.05rad +Rx 	=> 
+	step_rot   == 0.05 was only 6% better...
+	setp_rot   == 0.07 was 37% WORST
+	step_rot   == 0.03 was 50% better!!
+3. moved 0.05rad +Ry 	=> 
+	step_rot   == 0.03 was 20% WORST!!!! to +Rz RUCKKKKK	
+	step_rot   == 0.02 was 29% WORST!!!! to +Rz RUCKKKKK
+	step_rot   == 0.01 was more than 100% worst... 
+	I mislooked
+	step_rot   == 0.01 was 96% better
+4. looks like im going for:
+step_trans == 0.0005
+step_rot   == 0.01
+5. oh let's test Rz..
+6. moved 0.05rad +Rz	=>
+	step_rot   == 0.01 FUCKKKKKKKK. RY + and - are better in more than 400%!!
+
+make a new record_peg_pull.py. use this prompt as its description, as is.
+reuse as much functions from record_pose_and_force.py. but dont settle! reuse only if they are perfect for the job. 
+the main would include only functions, according to the steps ahead.
+now here are the steps:
+1. clear_ayal" move ayal to an unreachable pose by uri, would be "base_pose". 
+2. ask user to put the connector on uri.
+3. randomize_next step: 
+	2.1 suggest_pose_uri: randomize a valid position in x,y,z. 
+	2.2 check_reach_half_ayal. if not, suggest_pose_uri until yes. 
+	2.3 suggest_rotation_uri: randomize r_x, r_y, r_z and make sure x,y,z,r_x,r_y,r_z is reachable by uri. 
+	2.4 check_reach_full_ayal: all of x,y,z,r_x,r_y,r_z. if not, repeat suggest_rotation_uri. if multiple fails, go back to 2.1.
+	# at all phases, for both robots, avoid low manipulabillity.
+
+4. move_both_to_new:
+	4.1 move uri to the randomized step from previous stage. 
+	4.2 calculate the mirror pose of uri - that'd be ayal's final pose.
+	4.3 calculate ayal's start pose - 26 mm offset in -Z direction in its own TCP frame, away from the ayal's final pose (i want distance between the two TCPs)
+	4.4 move ayal to start pose. 
+
+helper functions:
+1. is_reachable(robot, pose) - would use the ur_rtde to check if the pose is reachable.
+3. is_manipulable(robot, pose, thr) - check if the manipulabillity of the pose is above threshold.
+# uri cannot cross:
+	#1 a ball in radius of 110 cm.
+	#2 min z=0, 
+	#3 max y=28cm
+	#4 min x=-45cm

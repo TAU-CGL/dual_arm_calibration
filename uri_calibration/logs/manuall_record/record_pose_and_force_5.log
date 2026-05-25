@@ -1,0 +1,28 @@
+log_path:  /home/user/Projects/yarbiv/rmp_lab/playground/logs/record_pose_and_force_5.log
+data_path: /home/user/Projects/yarbiv/rmp_lab/playground/logs/record_pose_and_force_5.json
+new uri:  [0.3143, -0.6367, 0.5323, 1.5213, 0.3235, -2.1787]
+new ayal: [-0.1868, 0.3228, 0.2622, -2.2916, -0.6779, -1.6259]
+current uri:   [0.3143, -0.6367, 0.5323, 1.5213, 0.3235, -2.1787]
+expected uri:  [0.3695, -0.3221, 0.6966, 1.5708, 0.0000, 0.0000]
+current ayal:  [-0.1868, 0.3228, 0.2622, -2.2916, -0.6779, -1.6259]
+expected ayal: [-0.1273, 0.6368, 0.4271, 0.0000, 2.2214, 2.2214]
+zeroFtSensor -> True
+step 0
+  ayal_delta:      [0.0000, -0.0000, 0.0000, -0.0001, 0.0000, 0.0000]
+  ayal_wrench_tcp: [-0.0946, -0.0860, 0.0979, -0.0040, 0.0030, -0.0015]
+step 1
+  ayal_delta:      [-0.0060, -0.0032, 0.0022, 0.0160, -0.0203, -0.0009]
+  ayal_wrench_tcp: [0.8585, -0.3899, -0.4943, -0.0168, 0.1433, 0.0145]
+step 2
+  ayal_delta:      [-0.0053, -0.0034, 0.0028, -0.1118, 0.0903, 0.0536]
+  ayal_wrench_tcp: [-2.1237, 1.5958, -2.4311, -0.2560, -0.0736, -0.3397]
+step 3
+  ayal_delta:      [-0.0052, -0.0033, 0.0029, -0.1647, -0.0107, 0.1568]
+  ayal_wrench_tcp: [-1.8653, -3.4222, -8.0905, 0.3346, 0.2663, 0.2890]
+step 4
+  ayal_delta:      [-0.0063, -0.0031, 0.0031, -0.0865, -0.0271, -0.0452]
+  ayal_wrench_tcp: [-1.3746, 2.5743, 0.2508, -0.2047, -0.1394, 0.3554]
+step 5
+  ayal_delta:      [-0.0230, -0.0111, 0.0175, -0.1145, -0.0339, 0.1317]
+  ayal_wrench_tcp: [-0.0948, -0.5711, 0.3750, 0.0517, 0.0709, 0.0110]
+saved 6 records to /home/user/Projects/yarbiv/rmp_lab/playground/logs/record_pose_and_force_5.json

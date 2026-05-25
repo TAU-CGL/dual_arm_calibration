@@ -1,0 +1,7 @@
+uri rxyz anchor (first pose): [1.1495, -0.5409, -0.1717]
+ayal current position: [-0.5524, 0.1914, 0.0113, -0.2282, 2.3989, 1.5305]
+uri  mate: [0.4600, -0.3600, 0.3000, 1.1495, -0.5409, -0.1717]
+ayal mate: [-0.0350, 0.6010, 0.0306, 0.2219, 2.1781, 1.4560]
+ayal_unmate: [-0.0498, 0.5764, 0.0395, 0.2219, 2.1781, 1.4560]
+[cycle 0] insert: target rel_d <= 1.5 mm (cap 25 steps × 1.0 mm), then seek |F_z|>=5.0 N (cap 15 steps)
+saved 0 records to /home/user/Projects/yarbiv/rmp_lab/dual_arm_peg/output/auto_peg_cycle_11.json

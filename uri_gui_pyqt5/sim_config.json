@@ -1,0 +1,207 @@
+{
+  "app": {
+    "mode": "script",
+    "backend": "sim"
+  },
+  "ui": {
+    "label_width": 100,
+    "label_height": 100,
+    "grid_layout": {
+      "total_rows": 6,
+      "other_column": 4,
+      "sim_column": 0,
+      "sim_width": 6
+    },
+    "ddl_handle": {
+      "move joints (rad/deg)": "initMoveJoints",
+      "move TCP (mm/cm/m)": "initMoveTCP"
+    }
+  },
+  "sim": {
+    "dim": 6,
+    "sim_render_res": 0.004166666667,
+    "default_joints_uri": [0, 0, 0, 0, 0, 0],
+    "default_joints_ayal": [0, 0, 0, 0, 0, 0],
+    "base_ayal": [0.5, -0.97, 0.25, 0, 0, 0],
+    "base_uri": [0, 0, 0, 0, 0, 0]
+  },
+  "reach_grid": {
+    "enabled": false,
+    "npz_path": "/home/user/Projects/yarbiv/rmp_lab/uri_calibration/output/reach_grid.npz",
+    "show_unreachable": false,
+    "point_size": 4.0
+  },
+  "robots": {
+    "uri": {
+      "type": "UR5eRobotiq85",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "host": "192.168.56.101",
+      "show": true,
+      "tcp_start_pose": [
+        0.296574,
+        -0.455378,
+        0.700514,
+        -0.055331,
+        0.180987,
+        -2.378501
+      ],
+      "gripper_length": 0.153,
+      "gripper_length_note": "in real life it is around 0.1718",
+      "gripper_closed": true,
+      "joint_zero_offsets": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "q_start_pose": [
+        -0.7862864836268357,
+        -1.1186484684332723,
+        0.98717316494639,
+        -3.3008356916903,
+        -3.2102408862070306,
+        -0.408744260031451
+      ]
+    },
+    "ayal": {
+      "type": "UR5eRobotiq85",
+      "position": [
+        0.5,
+        -0.96,
+        0.27
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "host": "192.168.57.101",
+      "show": true,
+      "tcp_start_pose": [
+        -0.200674,
+        0.485527,
+        0.416839,
+        -2.902712,
+        -1.142236,
+        0.01316
+      ],
+      "gripper_length": 0.153,
+      "gripper_length_note": "in real life it is around 0.1718",
+      "gripper_closed": true,
+      "joint_zero_offsets": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "q_start_pose": [
+        -0.3955938498894969,
+        -3.67504180568696,
+        1.8056398024286942,
+        -1.2467061903519472,
+        -0.3861674836791082,
+        3.139820603346951
+      ]
+    }
+  },
+  "walls": {
+    "wall_x": {
+      "start": [
+        -0.44,
+        0.28
+      ],
+      "end": [
+        3.0,
+        0.28
+      ],
+      "height": 1.0,
+      "thickness": 0.02,
+      "color": [
+        0.7,
+        0.7,
+        0.7,
+        1.0
+      ],
+      "show": false
+    },
+    "wall_y": {
+      "start": [
+        -0.44,
+        0.28
+      ],
+      "end": [
+        -0.44,
+        -3.0
+      ],
+      "height": 1.0,
+      "thickness": 0.02,
+      "color": [
+        0.7,
+        0.7,
+        0.7,
+        1.0
+      ],
+      "show": false
+    }
+  },
+  "camera": {
+    "yaw": 114.0,
+    "pitch": -16.0,
+    "distance": 1.8,
+    "target": [
+      0.25,
+      -0.8,
+      0.3
+    ]
+  },
+  "stands": {
+    "ayal_stand": {
+      "robot": "ayal",
+      "size": [
+        0.1,
+        0.1
+      ],
+      "color": [
+        0.3,
+        0.3,
+        0.3,
+        1.0
+      ],
+      "show": true
+    }
+  },
+  "parameters": {
+      "default_speed": 0.5,
+      "default_acceleration": 0.5,
+      "movej_mode": "PD Interp",
+      "physics_params": {
+        "force_multiplier": 50,
+        "position_gain": 1.0,
+        "velocity_gain": 2.0,
+        "converge_threshold": 0.01,
+        "max_converge_steps": 4800
+      }
+    },
+  "gui": {
+    "window": {
+      "title": "Uri's GUI  [SIM MODE]",
+      "geometry": "1800x900",
+      "resizable": true
+    },
+    "panels": {
+      "actual_tcp": true, 
+      "actual_q": true, 
+      "gripper": true, 
+      "calibrate": true, 
+      "move_to": true, 
+      "move_tcp": true, 
+      "move_both_tcp": true, 
+      "tcp_force": true, 
+      "explore_force": true, 
+      "alpha_puzzle": true, 
+      "sim_visibility": true, 
+      "sim_camera": true, 
+      "sim_settings": true
+    },
+    "default_panel": "actual_tcp"
+  }
+}
